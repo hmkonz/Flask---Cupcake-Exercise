@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cupcakes</title>
+    <link rel="stylesheet" href="/static/app.css" />
+  </head>
+  <body>
+    <h1>Cupcakes!</h1>
+    <ul id="cupcake-list"></ul>
+
+    <h2>Add a new cupcake!</h2>
+
+    <form id="new-cupcake-form">
+      <div>
+        <label for="form-flavor">Flavor</label><br />
+        <input
+          type="text"
+          id="form-flavor"
+          name="flavor"
+          placeholder="Enter a cupcake flavor"
+        />
+      </div>
+      <br /><br />
+
+      <div>
+        <label for="form-size">Size</label><br />
+        <input
+          type="text"
+          id="form-size"
+          name="size"
+          placeholder="Enter a cupcake size"
+        />
+      </div>
+      <br /><br />
+
+      <div>
+        <label for="form-rating">Rating</label><br />
+        <input
+          type="text"
+          id="form-rating"
+          name="rating"
+          placeholder="Enter a cupcake rating"
+        />
+      </div>
+      <br /><br />
+
+      <div>
+        <label for="form-image">Image URL</label><br />
+        <input
+          type="text"
+          id="form-image"
+          name="image"
+          size="25"
+          placeholder="Provide an image of this cupcake"
+        />
+      </div>
+      <br /><br />
+
+      <button>Add</button>
+    </form>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="static/app.js"></script>
+  </body>
+</html>
